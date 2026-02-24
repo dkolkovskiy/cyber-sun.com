@@ -36,7 +36,7 @@
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-8 text-center text-md-left">
                 <div class="header-top-cta">
-                    <span data-toggle="modal" data-target="#myModal" onclick="$('#myModal').show()"><i  class="fas fa-map-marker-alt" ></i>430 Park Avenue</span>
+                    <span data-toggle="modal" data-target="#myModal" onclick="$('#myModal').show()"><i  class="fas fa-map-marker-alt" ></i>Venice, FL</span>
                     <span><i class="far fa-envelope-open"></i><a href="mailto:info@cyber-sun.com?subject=CyberSun email">info@cyber-sun.com</a></span>
                 </div>
             </div>
@@ -59,10 +59,10 @@
     document.addEventListener('DOMContentLoaded', function() {
         $('#myModal').on('shown.bs.modal', function (e) {
 
-            var map = L.map('map').setView([40.761, -73.97228], 18);
+            var map = L.map('map').setView([27.0998, -82.4543], 18);
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19,attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-            var marker = L.marker([40.761, -73.97228]).addTo(map);
+            var marker = L.marker([27.0998, -82.4543]).addTo(map);
             });
     });
 
